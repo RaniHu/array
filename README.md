@@ -1,8 +1,7 @@
 # array
 关于js数组排序的一些常用算法
 
-   //1.数组中奇数在前，偶数在后
-   
+     //1.数组中奇数在前，偶数在后
     var this_arr= [1,2,3,4,5,6,7]; 
     var left=[];
     var right=[];
@@ -32,9 +31,7 @@
     var obj_arr2 = [0, 1, 3, 4, 6, 8, 9, 5, 3, 8, 21, 1,3,3,5,6,8];
     console.log('数组去重方法一:'+noRepeat(obj_arr2));
 
-
     //方法二  利用sort删除相邻相同项
-    
     function removeRepeat(obj){
         obj.sort();                             //按顺序排序，相同数字的会在一起
         for(var i =0; i<obj.length;i++){
@@ -50,7 +47,6 @@
 
 
     //3.数字从大到小排序
-    
     function sort(a,b) {
 //        return a-b;             //升序
         return b-a;              //降序
@@ -62,7 +58,6 @@
 
 
     //4.计算数组中奇数和偶数的个数
-    
     function countNum(obj){
         var odd=0;
         var even=0;
@@ -97,7 +92,6 @@
 
 
     //6.首字母大写
-    
     //方法一    substring
     function toUpper(str){
         var new_str=str.toLowerCase().split(" ");
@@ -131,7 +125,6 @@
 
 
     //7.判断字符串中出现最多次的字符,统计次数
-    
       var str="lalwayssssswanttolearnmoreknowlledde";
       var json={};
       for(var i=0; i<str.length;i++){
@@ -160,7 +153,7 @@
       }
 
 
-      //判断第一个偶数的位置
+      //8判断第一个偶数的位置
       var arr8=[1,5,7,4,8,7,11,33,4];
       for(var i=0;i<arr8.length;i++){
         var flag=true;
@@ -173,8 +166,7 @@
       console.log("第一个偶数为："+firstEven+"第一个偶数的位置为："+i);
 
 
-      //8.全部排列组合
-      
+      //9.全部排列组合
       var count=0;  
       function show(arr) {  
         console.log("第"+ ++count+"种方法:"+arr);  
